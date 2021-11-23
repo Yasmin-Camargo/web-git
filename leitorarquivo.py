@@ -6,7 +6,7 @@ class LeitorArquivo:
     def getValores(self):
         return self.valores
     
-if nomeArq == '_main_':
+if _name_ == '_main_':
     leitor = LeitorArquivo("data.txt")
     valores =  leitor.getValores()
     print(valores)
