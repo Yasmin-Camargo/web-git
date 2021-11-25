@@ -13,8 +13,9 @@ def main():
     plt.title('Gráfico de linhas')
     
     for i in range(len(valores)):
-        plt.plot(valores[i])
+        plt.plot(valores[i], label='Série '+ str(i+1))
         
+    plt.legend(loc='upper left')
     plt.show()
     
 main()
