@@ -10,6 +10,7 @@ def main():
     
     plt.xlabel('Amostragem')
     plt.ylabel('Valores de entrada')
+    plt.title('Gráfico de linhas')
     plt.plot(valores)
     plt.show()
     
