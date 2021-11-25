@@ -8,6 +8,8 @@ def main():
     valores = leitor.getValores()
     print(valores)
     
+    plt.xlabel('Amostragem')
+    plt.ylabel('Valores de entrada')
     plt.plot(valores)
     plt.show()
     
