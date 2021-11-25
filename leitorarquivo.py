@@ -9,6 +9,13 @@ class LeitorArquivo:
     def getValores(self):
         return self.valores
     
+    def calculoMedias(self):
+        medias = []
+        for lista in self.valores:
+            media = sum(lista) / len(lista)
+            medias.append(media)
+        return medias
+    
 if __name__ == '__main__':
     leitor = LeitorArquivo("data.txt")
     valores =  leitor.getValores()
