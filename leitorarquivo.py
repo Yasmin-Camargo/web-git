@@ -1,7 +1,10 @@
 class LeitorArquivo:
     def __init__ (self, nomeArq):
         self.arq = open(nomeArq, "r")
-        self.valores = [float(x) for x in self.arq.readline().split()]
+        self.valores = []
+        for linha in self.arq.readlines():
+            lista = [float(x) for x in linha.split()]
+            self.valores.append(lista)
         
     def getValores(self):
         return self.valores

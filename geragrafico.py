@@ -11,7 +11,10 @@ def main():
     plt.xlabel('Amostragem')
     plt.ylabel('Valores de entrada')
     plt.title('Gráfico de linhas')
-    plt.plot(valores)
+    
+    for i in range(len(valores)):
+        plt.plot(valores[i])
+        
     plt.show()
     
 main()
